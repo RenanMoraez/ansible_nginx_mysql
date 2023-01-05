@@ -1,0 +1,4 @@
+---
+- name: Instalando o mysql
+  apt:
+    name: mysql-server

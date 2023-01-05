@@ -1,0 +1,13 @@
+---
+- name: update cache
+  apt:
+    update_cache: yes
+
+- name: Install nginx
+  apt:
+    name: nginx
+
+- name: copy site.html
+  copy:
+    src: site.html
+    dest: /var/www/html
